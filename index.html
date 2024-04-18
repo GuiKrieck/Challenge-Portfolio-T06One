@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    
+    <title>Portifólio Pessoal</title>
+</head>
+<body>
+    <header class="menu-container">
+        <div class="menu__title">
+            <a href="#title"><h3>Guilherme P. Krieck</h3></a>
+        </div>
+        <nav>
+            <ul class="menu__list">
+                <li class="list__item">
+                    <a href="#about">Sobre mim</a>
+                </li>
+                <li class="list__item">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="list__item">
+                    <a href="#xp">Projetos</a>
+                </li>
+                <li class="list__item">
+                    <a href="#academics">Formação</a>
+                </li>
+            </ul>
+            <div class="menu__contact">
+                <a href="#contact">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="title" id="title">
+            <div class="title__div">
+                <img class="title__profile" src="./assets/images/GuiKrieck.jpg">
+                <div class="title__container">
+                    <h3 class="title__bio">Olá, meu nome é Guilherme Piovezan Krieck e eu sou um desenvolvedor front-end.</h3>
+                    <p class="title__subsection">Estudante de tecnologia e participante do projeto Oracle ONE na Alura</p>
+                    <ul class="title__network">
+                        <li class="title__network__item">
+                            <a href="https://github.com/GuiKrieck" target="_blank" class="button__link">Github</a>
+                        </li>
+                        <li class="title__network__item">
+                            <a href="https://www.linkedin.com/in/guilherme-krieck/" target="_blank" class="button__link">Linkedin</a>
+                        </li>
+                        <li class="title__network__item">
+                            <a href="https://www.dio.me/users/guilherme_krieck"  target="_blank" class="button__link">Pefil DIO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about__container">
+                <h2 class="about__title">Sobre mim</h2>
+                <p class="about__paragraph">Meu nome é Guilherme Piovezan Krieck, nascido em 1988 em São José do Rio Preto. Tive meu primeiro contato com tecnologia em 2005 quando fiz um curso técnico na etec Centro Paula Souza, na época com Visual Basic e Delphi. Depois disso me distanciei um pouco do mundo tecnológico para focar na profissão da família: Contabilidade</p>
+                <p class="about__paragraph">No ano de 2019 me formei em contabilidade e exerci a profissão por 10 Anos em empresa familiar. Durante esse tempo fui o responsável pela informatização do escritório deixando os livros de papel de lado e migrando para sistemas computadorizados. Hoje estou em busca de uma transição de carreira para trabalhar na área de tecnologia.</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 class="skills__title" id="skills">Skills</h2>
+            <h3 class="skills__subtitle">Hard Skills</h3>
+            <div class="skills__line">
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="./assets/images/skills/htlm.png"></li>
+                        <li class="skills__name"> Html 5</li>
+                    </ul>
+                </div>                    
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"> <img src="./assets/images/skills/css_icon.png" alt=""> </li>
+                        <li class="skills__name">CSS</li>
+                    </ul>
+                </div>                    
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"> <img src="./assets/images/skills/js_icon.png" alt=""></li>
+                        <li class="skills__name">Javascript</li>
+                    </ul>
+                </div>    
+            </div>
+
+            <h3 class="skills__subtitle">Línguas</h3>
+            <div class="skills__idioms">
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="./assets/images/skills/bandeira-brasil.png"></li>
+                        <div>
+                            <li class="skills__name"> Português</li>
+                            <li class="skills__level">Nativo</li>
+                        </div>
+                    </ul>
+                </div>                    
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"> <img src="./assets/images/skills/bandeira-estados-unidos.webp" alt=""> </li>
+                        <div>
+                            <li class="skills__name"> Inglês</li>
+                            <li class="skills__level">Fluente</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2 class="experience__section__title" id="xp">Projetos</h2>
+            <div class="experience__box">
+                <img class="experience__img" src="./assets/images/projetos/hbo-max.png">
+                <div class="experience__info">
+                    <h3 class="experience__title">Clone do Site HBO-MAX </h3>
+                    <h4 class="experience__text"> Desenvolvido como projeto final da Trilha de CSS DIO </h4>
+                    <div class="experience__description">
+                        <a href="https://github.com/GuiKrieck/HBOmax-clone-DIO" target="_blank" class="button__link">Repositório</a>
+                        <a href="https://guikrieck.github.io/HBOmax-clone-DIO/" target="_blank" class="button__link">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="experience__box experience__reverse">
+                <img class="experience__img" src="./assets/images/projetos/discord.png">
+                <div class="experience__info">
+                    <h3 class="experience__title">Clone da landing Page do discord </h3>
+                    <h4 class="experience__text"> Desenvolvido como projeto final da Trilha de CSS DIO </h4>
+                    <div class="experience__description">
+                        <a href="https://github.com/GuiKrieck/Clone-da-landing-page-do-Discord-DIO" target="_blank" class="button__link">Repositório</a>
+                        <a href="https://guikrieck.github.io/Clone-da-landing-page-do-Discord-DIO/" target="_blank" class="button__link">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="experience__box">
+                <img class="experience__img" src="./assets/images/projetos/decodificador-text.png">
+                <div class="experience__info">
+                    <h3 class="experience__title">Decodificador-de-texto-T6One </h3>
+                    <h4 class="experience__text"> Challenge Alura Decodificador </h4>
+                    <div class="experience__description">
+                        <a href="https://github.com/GuiKrieck/Decodificador-de-texto-T6One" target="_blank" class="button__link">Repositório</a>
+                        <a href="https://guikrieck.github.io/Decodificador-de-texto-T6One/" target="_blank" class="button__link">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="experience__box experience__reverse">
+                <img class="experience__img" src="./assets/images/projetos/Pokedex.png">
+                <div class="experience__info">
+                    <h3 class="experience__title">Construindo uma pokedex consumindo a PokeAPI </h3>
+                    <h4 class="experience__text"> Desenvolvido como projeto da trilha de javascript da DIO </h4>
+                    <div class="experience__description">
+                        <a href="https://github.com/GuiKrieck/Dio-Pokedex" target="_blank" class="button__link">Repositório</a>
+                        <a href="https://guikrieck.github.io/Dio-Pokedex/" target="_blank" class="button__link">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="academic">
+            <h2 class="academic__title" id="academics">Formação acadêmica</h2>
+            <div class="academic__courses">
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__img"><a href="https://cursos.alura.com.br/user/guilherme-krieck/degree-logica-de-programacao-turma-6-oracle-one-695775/certificate" target="_blank"><img src="./assets/images/academics/Alura.png"></a></li>
+                        <li class="academic__courses__item__title"><h4>Iniciante em Programação T6 - ONE</h4></li>
+                        <li class="academic__courses__item__subtitle"><p>2024 - Alura</p></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__img"><a href="https://www.dio.me/certificate/HZOSX2RF/share" target="_blank"><img src="./assets/images/academics/dio.jpg"></a></li>
+                        <li class="academic__courses__item__title"><h4>Formação CSS Web Developer</h4></li>
+                        <li class="academic__courses__item__subtitle"><p>2024 - Digital Innovation One</p></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__img"><a href="https://www.dio.me/certificate/WM2AMSZA/share" target="_blank"><img src="./assets/images/academics/dio.jpg"></a></li>
+                        <li class="academic__courses__item__title"><h4>Formação HTML Web Developer</h4></li>
+                        <li class="academic__courses__item__subtitle"><p>2024 - Digital Innovation One</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact" id="contact">
+            <h2 class="contact__title">Contato</h2>
+            <div class="contact__forms">
+                <div class="contact__email">
+                    <h3>E-mail</h3>
+                    <div class = "social__card">
+                        <a href="mailto:guilherme.krieck@gmail.com">
+                            <img src="./assets/images/Socials/gmail.png" alt="">
+                            Gmail</a>
+                    </div>
+                </div>
+                <div class="contact__socials">
+                    <h3>Redes Sociais</h3>
+                    <div class = "social__card">
+                        <a href="https://www.linkedin.com/in/guilherme-krieck/">
+                            <img src="./assets/images/Socials/linkedin.png" alt="">
+                            LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido Por</p> 
+        <span>Guilherme Piovezan Krieck</span>
+    </footer>
+</body>
+</html>

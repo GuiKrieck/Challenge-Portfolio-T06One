@@ -1,0 +1,462 @@
+:root{
+    --bg-primary-color:#FAF9F9;
+    --bg-secondary-color: #DCEEEA;
+    --text-color: #000000;
+    --header-bg-color:#4D5364;
+    --header-txt-color: #FFFFFF;
+    --footer-bg-color:#4D5364;
+    --footer-txt-color: #FFFFFF;
+    --btn-bg-color: #77e1be;
+    --btn-bg-hover-color: #2dd09c;
+    --bg-gradient: linear-gradient(135deg,#FAF9F9 0%, #DCEEEA 30%, #BEE3DB 100%)
+}
+*{
+    scroll-behavior: smooth;
+    scroll-margin-top: 200px;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: var(--bg-primary-color);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.menu-container{
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+    height: 56px;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    position: sticky;
+    top: 0;
+}
+
+.menu__title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.menu__list{
+    display: none;
+}
+
+main section:nth-child(even){
+    background-color: var(--bg-secondary-color);
+}
+.title{
+    width: 100%;
+    background: var(--bg-gradient);
+}
+
+.title__div{
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    
+}
+
+.title__profile{
+    width: 58px;
+    border-radius: 50%;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title__network{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 15px 0;
+}
+.title__subsection{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.about{
+    width: 100%;
+    padding: 16px;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.about__paragraph{
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 17px;
+}
+
+.skills{
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.skills__title{
+    align-self: center;
+}
+
+.skills__subtitle{
+    margin-top: 20px;
+}
+
+.skills__line, .skills__idioms{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+
+.skills__box{
+    background-color: #FFFFFF;
+    height: 118px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__box > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.skills__img > img{
+    width: 30px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 16px;
+    gap: 16px;
+}
+.experience__section__title{
+    align-self: center;
+}
+.experience__box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.experience__img{
+    width: 100%;
+    align-self: center;
+}
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experience__description{
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.button__link{
+    background-color: var(--btn-bg-color);
+    padding: 10px 20px;
+    color: var(--text-color);
+    border-radius: 120px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: .88rem;
+    margin-bottom: 10px;
+}
+
+.button__link:hover{
+    background-color: var(--btn-bg-hover-color);
+    border: 1px solid grey;
+}
+
+.divider{
+    width: 100%;
+    border: 2px solid #000000;
+}
+
+.academic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 18px;
+}
+
+.academic__title{
+    align-self: center;
+}
+
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.academic__courses__item__img > a > img{
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px;
+    min-height: 95px;
+    cursor: pointer;
+    border: 5px solid black;
+    margin-top: 20px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    padding: 16px;
+}
+
+.contact__title{
+    align-self: center;
+}
+
+.contact__forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.contact__email, .contact__socials{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.social__card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.social__card > a > img{
+    width: 20px;
+    
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 16px 16px 20px;
+    min-height: 60px;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-txt-color);
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer span{
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+@media(min-width: 768px){
+
+    .menu__contact{
+        font-size: 1rem;
+    }
+
+    .title__div{
+        padding: 32px;
+        flex-direction: row-reverse;
+        gap: 32px;   
+    }
+
+    .title__profile{
+        width: 146px;
+    }
+
+    .about, .skills, .experience, .academic, .contact, footer{
+        padding: 32px;
+    }
+
+    .skills__line{
+        grid-template-columns: repeat(3,1fr);
+        gap: 32px;
+    }
+    
+    .academic__courses{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 16px;
+    }
+
+    .academic__courses__item__img > a > img{
+        margin-top: 0px;
+    }
+}
+
+@media(min-width:1440px){
+    h2, .title__bio{
+        font-size: 3rem;
+        padding: 20px 0;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+    
+    .menu-container{
+        justify-content: space-evenly;
+    }
+    nav, .menu__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:32px;
+        font-size: 1rem;
+    }
+
+    .title__div{
+        width: 100%;
+        
+    }
+    
+    .title__div, .about__container, .skills, .academic{
+        width: 85%;
+        max-width: 1980px;
+        margin: auto;
+    }
+
+    .title__profile{
+        width: 368px;
+    }
+    .title__container{
+        justify-content: center;
+    }
+    
+    .title__subsection, footer > p, footer > span{
+        font-size: 1.4rem;
+    }
+
+    .button__link{
+        font-size: 1.4rem;
+        padding: 8px 48px;
+    }
+
+    .about__paragraph, .skills__name, .skills__level{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    
+    .skills__img > img{
+        width: 45px;
+    }
+
+    .experience, .contact{
+        padding: 0 8% 32px;
+    }
+
+    .experience__box{
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        max-width: 1980px;
+        margin: 0 auto;
+    }
+
+    .experience__reverse{
+        flex-direction: row-reverse;
+    }
+
+    .experience__img{
+        width: 55%;
+    }
+    
+    .experience__info{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .experience__description{
+        display:flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+        margin-top: 15px;
+    }
+    .contact__forms{
+        max-width: 1980px;
+        margin: 0 auto;
+    }
+    .social__card > a{
+        font-size: 1.5rem;
+    }
+    .social__card > a > img{
+        width: 40px;
+    }
+}
